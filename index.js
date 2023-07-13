@@ -13,6 +13,9 @@ app.use(express.json())
 app.use(cookieParcer())
 app.use(cors())
 
+app.get('/',(req,res)=>{
+    res.send("Welcome")
+})
 app.use('/',userRoute)
 app.use('/',dashRoute)
 
